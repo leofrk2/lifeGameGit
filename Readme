@@ -21,13 +21,11 @@ sudo apt upgrade
 sudo apt install make
 sudo apt-get install libsdl2-dev
 sudo apt-get install libsdl2-ttf-dev
-mkdir lifeGame
-cd lifeGame/
 git clone https://github.com/leofrk2/lifeGameGit.git
 
 Pour compiler le programme : 
 
-Dans un terminal ou invite de commande : 
+cd lifeGameGit/
 
 make all
 make clean
@@ -36,3 +34,7 @@ make clean
 Ou bien ouvrir les fichier dans votre IDE, dans ce cas veillez a linker la SDL2
 
 ================================================
+
+Pour lancer : 
+
+./main
