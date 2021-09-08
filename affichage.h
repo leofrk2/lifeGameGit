@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <errno.h>
-#define THICK 8
+#define THICK 20
 #define SIZE_W2 500
 #define SIZE_H2 500
 
