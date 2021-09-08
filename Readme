@@ -1,0 +1,60 @@
+Pour faire fonctionner ce programme sous Linux :
+
+Installer la SDL2 :
+
+sudo apt-get install libsdl2-dev
+sudo apt-get install libsdl2-ttf-dev
+
+Compiler le programme :
+
+make all
+make clean
+./main
+
+Pour faire fonctionner ce programme sous Windows : 
+
+Installer la SDL2 :
+
+Installer mingw-w64 :
+
+https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download
+Pendant l'installation vérifier que l'architecture est : x86_64
+
+Ouvrir l'environnement des variables -> Sélectionner "Path" en dessous des variables système et cliquer sur "Edit" -> ajouter mingw64/bin
+
+Si tout à fonctionner lorsque vous taper make dans un terminal vous devriez avoir :
+
+gcc
+	gcc: fatal error: no input files
+	compilation termniated
+
+Installer la SDL2 :
+
+https://www.libsdl.org/download-2.0.php
+Choisir la librairie de developement windows : SDL2-devel-2.0.x-mingw.tar.gz (MinGW 32/64-bit)
+
+Extraire le dossier et copier le dossier "x86_64-w64-mingw32" ou vous souhaiter installer la librarie
+Ce dossier contient les include necessaire a la compilation, ainsi que "SDL2.dll" qui est nécessaore pour faire un .exe
+Copier ce dossier dans votre projet. Nous le renommons SDL2 pour la suite
+
+Copier le fichier SDL2/bin/SDL2.dll dans le dossier ou est le main.c
+
+================================================
+
+Les images doivent être dans le dossier image
+
+Les images sont enregistré dans le dossier sortie
+
+================================================
+
+Pour compiler le programme : 
+
+Dans un terminal ou invite de commande : 
+
+make all
+make clean
+./main
+
+Ou bien ouvrir les fichier dans votre IDE, dans ce cas veillez a linker la SDL2
+
+================================================
