@@ -38,3 +38,13 @@ Ou bien ouvrir les fichier dans votre IDE, dans ce cas veillez a linker la SDL2
 Pour lancer : 
 
 ./main
+
+================================================
+
+Pour télécharger les mises a jour :
+
+git pull
+make mrproper
+make
+
+================================================
